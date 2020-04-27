@@ -9,9 +9,10 @@ def find_min_in_nested_arrays(src)
     day_low = 200
     while element_index < src[row_index].length do
     if src[row_index][element_index] < day_low
-      low_temp.push(src[row_index][element_index])
+      day_low = src[row_index][element_index]
     end
     element_index += 1
+    low_temp.push(day_low)
   end
   row_index += 1
 end
