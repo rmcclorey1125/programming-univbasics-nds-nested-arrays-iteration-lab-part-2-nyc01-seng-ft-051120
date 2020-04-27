@@ -8,12 +8,13 @@ def find_min_in_nested_arrays(src)
     element_index = 0
     day_low = 200
     while element_index < src[row_index].length do
+      
     if src[row_index][element_index] < day_low
       day_low = src[row_index][element_index]
     end
     element_index += 1
-    low_temp.push(day_low)
   end
+  low_temp.push(day_low)
   row_index += 1
 end
 low_temp
